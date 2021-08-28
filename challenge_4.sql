@@ -340,7 +340,7 @@ SELECT title,
     release_year
 from peliculas
 WHERE release_year > 2000;
-SELECT movies
+SELECT title
 FROM peliculas
 WHERE director_id = 'Vincent Ward';
 SELECT event_id as eventos,
