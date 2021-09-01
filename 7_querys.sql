@@ -5,14 +5,13 @@ SELECT title,
     summary,
     release_year
 from peliculas
-WHERE release_year > 2000;
-SELECT movies
+WHERE release_year > 2000 and event_type=0;
+SELECT title
 FROM peliculas
-WHERE director_id = 'Vincent Ward';
-SELECT event_id as eventos,
-    movie_id as peliculas
+WHERE director_id = 'Vincent Ward' and event_type=0;
+SELECT movie_id as peliculas
 FROM projections
-WHERE user_id = 'lucky';
+WHERE user_id = 'lucky' order by movie_id ;
 SELECT us.user_id,
     us.first_name,
     us.last_name
@@ -23,4 +22,4 @@ where us.user_id = proj.user_id
 order by us.user_id;
 SELECT COUNT(*)
 from peliculas
-WHERE release_year > 2000;
+WHERE release_year > 2000 and event_type=0;
